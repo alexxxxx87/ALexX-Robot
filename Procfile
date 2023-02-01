@@ -1,1 +1,1 @@
-worker: python3 -m ALexX
+worker: python3 -m Niskala
