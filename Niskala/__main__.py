@@ -130,7 +130,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("ALexX.modules." + module_name)
+    imported_module = importlib.import_module("Nisakala.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -400,7 +400,7 @@ def niskala_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "niskala_about":
+    elif query.data == "ALexX_about":
         query.message.edit_text(
             text=f"*Berikut Bantuan Dasar Tentang Cara menggunakan Saya?*"
             
@@ -435,7 +435,7 @@ def niskala_about_callback(update, context):
         query.message.edit_text(
             text=f"*Mari Jadikan Grup Anda Sedikit Efektif Sekarang*"
             
-            f"\n✗ `Selamat, Niskala Sekarang Siap Mengelola Grup Anda.`"
+            f"\n✗ `Selamat, ALexX Sekarang Siap Mengelola Grup Anda.`"
             f"\n\n*Alat Admin*"
             f"\n✗ `Alat Admin Dasar Membantu Anda Melindungi Dan Memperkuat Grup Anda.`"
             f"\n✗ `Anda Dapat Melarang Anggota, Menendang Anggota, Mempromosikan Seseorang Sebagai Admin Melalui Perintah Bot.`"
@@ -489,8 +489,8 @@ def niskala_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ᴀʟ", url="t.me/ygmutebabi"),
-                    InlineKeyboardButton(text="Sʜᴜʙʜᴀɴꜱʜᴜ", url="t.me/Shubhanshutya"),
+                    InlineKeyboardButton(text="alex", url="t.me/ygmutebabi"),
+                    InlineKeyboardButton(text="chgabutan", url="t.me/gabutanguwa"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="niskala_about"),
