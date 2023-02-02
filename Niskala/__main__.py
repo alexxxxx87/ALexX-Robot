@@ -422,7 +422,7 @@ def niskala_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="ALexX_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="ALexX_"),
+                    InlineKeyboardButton(text="MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="niskala_"),
                  ],
                  [
                     InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="ALexX_back"),
